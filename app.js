@@ -36,11 +36,11 @@ const showWinner = (playerWin, playerChoice, cpuChoice) => {
 };
 
 const playGame = (playerChoice) => {
-    console.log("user choice = ", playerChoice);
+    console.log("player choice = ", playerChoice);
     const cpuChoice = genCpuChoice();
     console.log("cpu choice = ", cpuChoice);
 
-    let playerWin = false; // Initialize playerWin here
+    let playerWin = true; 
     if (cpuChoice === playerChoice) {
         drawGame();
     } else {
